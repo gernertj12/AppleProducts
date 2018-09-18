@@ -12,7 +12,7 @@ import UIKit
 //Product
 //ProductLine will contain [Product]
 
-enum productRating {
+enum ProductRating {
     case unrated
     case average
     case ok
@@ -26,11 +26,11 @@ class Product {
     var image: UIImage
     var title: String
     var description: String
-    var rating: productRating
+    var rating: ProductRating
     
-    init(title: String, description: String, imageName: String) {
+    init(titled: String, description: String, imageName: String) {
         
-        self.title = title
+        self.title = titled
         self.description = description
         if let image = UIImage(named: imageName) {
             self.image = image
